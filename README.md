@@ -1,7 +1,4 @@
-# Gaucfv
-
-Gaucfv là một ứng dụng Python để thu thập và gửi thông tin hệ thống của máy tính đến một máy chủ từ xa để quản lý bản quyền phần mềm.
-Dự án này bao gồm các tính năng chính như:
+# GAUCFV
 
 - Tạo và quản lý ID phần cứng duy nhất cho máy tính để quản lý bản quyền phần mềm.
 - Thu thập thông tin hệ thống như CPU, GPU, RAM, và hệ điều hành để quản lý bản quyền phần mềm.
@@ -9,52 +6,46 @@ Dự án này bao gồm các tính năng chính như:
 
 ## Cài Đặt
 
-1. **Cài đặt các thư viện phụ thuộc**
+1. Cài đặt các thư viện yêu cầu:
 
-   Đảm bảo bạn đã cài đặt các thư viện cần thiết. Bạn có thể cài đặt chúng bằng cách sử dụng `pip`:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-   ```bash
-   pip install requests wmi pytz
-2. **Cấu hình biến môi trường**
-Đặt token API của bạn vào biến môi trường API_TOKEN. Bạn có thể làm điều này bằng cách thêm dòng sau vào tệp cấu hình môi trường của bạn
-   ```bash
-   export API_TOKEN="your_api_token_here"
-   
-3. **Hoặc trên Windows**
-   ```bash
-   setx API_TOKEN "your_api_token_here"
+2. Cấu hình các biến môi trường:
 
-**Giải thích:**
-- **Cài đặt thư viện phụ thuộc**: Danh sách các thư viện cần thiết và cách cài đặt chúng. Bạn sử dụng lệnh `pip` để cài đặt các thư viện Python cần thiết.
-- **Cấu hình biến môi trường**: Hướng dẫn cách thiết lập biến môi trường để bảo mật thông tin nhạy cảm như token API. Lưu ý không công khai token này.
+    ```bash
+    export API_SERVER_URL="https://your-server-url.com/"
+    export API_TOKEN="your_api_token_here"
+    ```
 
-## Cách Sử Dụng
-   Chạy script Python chính: `python your_script_name.py`
-   
-**Giải thích:**
-- **Chạy ứng dụng**: Cung cấp lệnh để chạy ứng dụng. Thay thế `your_script_name.py` bằng tên file của script Python của bạn.
+3. Chạy ứng dụng:
+
+    ```bash
+    python your_script_name.py
+    ```
+
 ## Các Chức Năng
 
-- **`generate_unique_id(idcpu, idgpu)`**: Tạo ID duy nhất từ ID CPU và GPU.
-- **`get_hardware_id(wmi_class, wmi_property)`**: Lấy ID phần cứng từ WMI.
-- **`get_system_info()`**: Thu thập thông tin hệ thống.
-- **`send_http_post(reg_value, system_info, is_new=False)`**: Gửi thông tin đến máy chủ.
-- **`check_name_exist_on_server(reg_value)`**: Kiểm tra sự tồn tại của ID trên máy chủ.
-- **`write_to_registry(value)`**: Ghi giá trị vào registry Windows.
-- **`read_registry()`**: Đọc giá trị từ registry Windows.
-- **`write_to_file(file_name, content)`**: Ghi dữ liệu vào tệp.
-- **`delete_registry()`**: Xóa giá trị khỏi registry Windows.
-- **`validate_name(name)`**: Xác thực tính hợp lệ của ID.
+- `generate_unique_id(idcpu, idgpu)`: Tạo ID duy nhất từ ID CPU và GPU.
+- `get_hardware_id(wmi_class, wmi_property)`: Lấy ID phần cứng từ WMI.
+- `get_system_info()`: Thu thập thông tin hệ thống.
+- `send_http_post(reg_value, system_info, is_new=False)`: Gửi thông tin đến máy chủ.
+- `check_name_exist_on_server(reg_value)`: Kiểm tra sự tồn tại của ID trên máy chủ.
+- `write_to_registry(value)`: Ghi giá trị vào registry Windows.
+- `read_registry()`: Đọc giá trị từ registry Windows.
+- `write_to_file(file_name, content)`: Ghi dữ liệu vào tệp.
+- `delete_registry()`: Xóa giá trị khỏi registry Windows.
+- `validate_name(name)`: Xác thực tính hợp lệ của ID.
+
 ## Cảnh Báo
 
 - Đảm bảo không chia sẻ token API công khai.
+
 ## Giấy Phép
 
 Dự án này được cấp phép theo [Giấy phép MIT](https://opensource.org/licenses/MIT).
+
 ## Thông Tin Liên Hệ
 
 Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ qua email hoặc gửi yêu cầu trên GitHub Issues.
-
-**Lưu ý:**
-- Thay thế `your_script_name.py` bằng tên thực tế của script Python của bạn.
-- Thay thế `your_api_token_here` bằng token API thực tế của bạn (và đảm bảo không công khai token này).
