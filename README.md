@@ -16,11 +16,11 @@ Gaucfv là một ứng dụng Python để thu thập và gửi thông tin hệ 
    pip install requests wmi pytz
 2. **Cấu hình biến môi trường**
 Đặt token API của bạn vào biến môi trường API_TOKEN. Bạn có thể làm điều này bằng cách thêm dòng sau vào tệp cấu hình môi trường của bạn
-```bash
+   ```bash
    export API_TOKEN="your_api_token_here"
    
-*Hoặc trên Windows:*
-```bash
+**Hoặc trên Windows:**
+
    setx API_TOKEN "your_api_token_here"
 
 **Giải thích:**
