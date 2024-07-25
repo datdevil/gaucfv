@@ -29,7 +29,6 @@ Gaucfv là một ứng dụng Python để thu thập và gửi thông tin hệ 
 
 ### 3. Cách Sử Dụng
 
-```markdown
 ## Cách Sử Dụng
 
 1. **Chạy ứng dụng**
