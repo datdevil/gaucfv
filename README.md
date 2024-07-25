@@ -28,10 +28,8 @@ Gaucfv là một ứng dụng Python để thu thập và gửi thông tin hệ 
 - **Cấu hình biến môi trường**: Hướng dẫn cách thiết lập biến môi trường để bảo mật thông tin nhạy cảm như token API. Lưu ý không công khai token này.
 
 ## Cách Sử Dụng
-
    Chạy script Python chính:
-
-   ```bash
+   
    python your_script_name.py
 
 **Giải thích:**
