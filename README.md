@@ -29,7 +29,8 @@ Dự án này bao gồm các tính năng chính như:
 - **Cấu hình biến môi trường**: Hướng dẫn cách thiết lập biến môi trường để bảo mật thông tin nhạy cảm như token API. Lưu ý không công khai token này.
 
 ## Cách Sử Dụng
-   Chạy script Python chính:`python your_script_name.py`
+   Chạy script Python chính: `python your_script_name.py`
+   
 **Giải thích:**
 - **Chạy ứng dụng**: Cung cấp lệnh để chạy ứng dụng. Thay thế `your_script_name.py` bằng tên file của script Python của bạn.
 ## Các Chức Năng
