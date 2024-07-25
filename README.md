@@ -29,10 +29,7 @@
     ```bash
     python your_script_name.py
     ```
-## Xác Minh Mã
-
-Để xác minh tính minh bạch của mã nguồn, vui lòng tham khảo liên kết sau: [Thông tin minh bạch](https://github.com/datdevil/gaucfv/blob/main/README.md).
-
+    
 ## Các Chức Năng
 
 - `generate_unique_id(idcpu, idgpu)`: Tạo ID duy nhất từ ID CPU và GPU.
@@ -49,6 +46,10 @@
 ## Cảnh Báo
 
 - Đảm bảo không chia sẻ token API công khai.
+
+## Xác Minh Mã
+
+Để xác minh tính minh bạch của mã nguồn, vui lòng tham khảo liên kết sau: [Thông tin minh bạch](https://github.com/datdevil/gaucfv/blob/main/README.md).
 
 ## Giấy Phép
 
