@@ -58,10 +58,13 @@ Gaucfv là một ứng dụng Python để thu thập và gửi thông tin hệ 
 ## Cảnh Báo
 
 - Đảm bảo không chia sẻ token API công khai.
-- Nếu bạn lỡ đưa token vào mã nguồn, hãy ngay lập tức đổi token và xóa khỏi lịch sử commit.
 ## Giấy Phép
 
 Dự án này được cấp phép theo [Giấy phép MIT](https://opensource.org/licenses/MIT).
 ## Thông Tin Liên Hệ
 
 Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ qua email hoặc gửi yêu cầu trên GitHub Issues.
+
+**Lưu ý:**
+- Thay thế `your_script_name.py` bằng tên thực tế của script Python của bạn.
+- Thay thế `your_api_token_here` bằng token API thực tế của bạn (và đảm bảo không công khai token này).
