@@ -43,7 +43,6 @@ Gaucfv là một ứng dụng Python để thu thập và gửi thông tin hệ 
 
 ### 4. Các Chức Năng
 
-```markdown
 ## Các Chức Năng
 
 - **`generate_unique_id(idcpu, idgpu)`**: Tạo ID duy nhất từ ID CPU và GPU.
