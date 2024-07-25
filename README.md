@@ -5,25 +5,33 @@
 - Gửi thông tin đến máy chủ thông qua HTTP POST và PATCH requests để quản lý bản quyền phần mềm.
 
 ## Cài Đặt
-
-1. Cài đặt các thư viện yêu cầu:
+1. Clone repository:
+2. 
+    ```bash
+    git clone https://github.com/datdevil/gaucfv.git
+    ```
+    
+3. Cài đặt các thư viện yêu cầu:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-2. Cấu hình các biến môi trường:
+4. Cấu hình các biến môi trường:
 
     ```bash
     export API_SERVER_URL="https://your-server-url.com/"
     export API_TOKEN="your_api_token_here"
     ```
 
-3. Chạy ứng dụng:
+5. Chạy ứng dụng:
 
     ```bash
     python your_script_name.py
     ```
+## Xác Minh Mã
+
+Để xác minh tính minh bạch của mã nguồn, vui lòng tham khảo liên kết sau: [Thông tin minh bạch](https://github.com/datdevil/gaucfv/blob/main/README.md).
 
 ## Các Chức Năng
 
