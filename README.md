@@ -20,8 +20,8 @@ Dự án này bao gồm các tính năng chính như:
    ```bash
    export API_TOKEN="your_api_token_here"
    
-   #Hoặc trên Windows:
-
+3. **Hoặc trên Windows**
+   ```bash
    setx API_TOKEN "your_api_token_here"
 
 **Giải thích:**
